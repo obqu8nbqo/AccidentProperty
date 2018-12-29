@@ -4,8 +4,6 @@ body {
 
 li {
   list-style: none;
-  float: left;
-  padding: 25px 20px;
 }
 
 .header {
@@ -25,12 +23,32 @@ li {
   float: left;
 }
 
+.header-list li {
+  float: left;
+  padding: 20px 20px;
+}
+
 .main {
   background-color: #bdf7f1;
   height: 600px;
 }
 
 .footer {
-  background-color: #ceccf3;
-  height: 270px;
+  background-color: #2f5167;
+  color: #fff;
+  height: 120px;
+  padding: 30px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
 }
