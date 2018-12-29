@@ -11,4 +11,7 @@ public class HelloController {
         return "hello world";
     }
 
+//    @RequestMapping("")
+//    ユーザのデータ返ってくる
+
 }
