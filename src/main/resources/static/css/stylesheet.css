@@ -41,7 +41,7 @@ li {
 }
 
 .contents {
-  height: 2000px;
+  height: 1800px;
   margin-top: 50px;
 }
 
@@ -52,6 +52,25 @@ li {
 
 .contents-item p {
   font-size: 24px;
+}
+
+.contact-form {
+　padding-top: 10px;
+}
+
+input, textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+.contact-submit {
+  width: 442px;
+  background-color: #dee7ec;
+  color: #889eab;
 }
 
 .footer {
