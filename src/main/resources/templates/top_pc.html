@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" xmlns:th="http://www.thymelead.org">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>accidentproperty</title>
@@ -45,12 +45,14 @@
 
         <div class="contact-form">
             <h3>お問い合わせ</h3>
-            <p>メールアドレス（必須）</p>
-                <input>
-            <p>お問い合わせ内容（必須）</p>
-                <textarea></textarea>
-            <p>※必須項目は必ずご入力ください</p>
+            <form action="/" method="post">
+                <p>メールアドレス（必須）</p>
+                <input type="text" name="mailAddress">
+                <p>お問い合わせ内容（必須）</p>
+                <textarea type="text" name="inquiryContents"></textarea>
+                <p>※必須項目は必ずご入力ください</p>
                 <input class="contact-submit" type="submit" value="送信">
+            </form>
         </div>
     </div>
     <div class="footer">
