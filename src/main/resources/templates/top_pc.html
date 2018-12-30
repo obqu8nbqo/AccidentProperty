@@ -27,8 +27,8 @@
             <h3>物件一覧</h3>
             <tr th:each="property : ${propertyList}">
                 <div>
-                    <td>th:text="${property.propertyId}"</td>
-                    <td>th:text="${property.title}"</td>
+                    <td th:text="${property.propertyId}"></td>
+                    <td th:text="${property.title}"></td>
                 </div>
             </tr>
             <!--<div class="contents-item">-->
