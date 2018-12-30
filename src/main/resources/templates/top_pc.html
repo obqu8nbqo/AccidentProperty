@@ -25,22 +25,28 @@
         </div>
         <div class="contents">
             <h3>物件一覧</h3>
-            <div class="contents-item">
-                <p>物件１</p>
-                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">
-            </div>
-            <div class="contents-item">
-                <p>物件２</p>
-                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">
-            </div>
-            <div class="contents-item">
-                <p>物件３</p>
-                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">
-            </div>
-            <div class="contents-item">
-                <p>物件４</p>
-                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">
-            </div>
+            <tr th:each="property : ${propertyList}">
+                <div>
+                    <td>th:text="${property.propertyId}"</td>
+                    <td>th:text="${property.title}"</td>
+                </div>
+            </tr>
+            <!--<div class="contents-item">-->
+                <!--<p>物件１</p>-->
+                <!--<img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">-->
+            <!--</div>-->
+            <!--<div class="contents-item">-->
+                <!--<p>物件２</p>-->
+                <!--<img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">-->
+            <!--</div>-->
+            <!--<div class="contents-item">-->
+                <!--<p>物件３</p>-->
+                <!--<img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">-->
+            <!--</div>-->
+            <!--<div class="contents-item">-->
+                <!--<p>物件４</p>-->
+                <!--<img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/html/study/html.svg">-->
+            <!--</div>-->
         </div>
 
         <div class="contact-form">
